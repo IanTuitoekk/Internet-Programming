@@ -28,6 +28,12 @@ $ObjMenus = new menus();
 $ObjHeadings = new headings();
 $ObjCont=new contents();
 
+require "includes/constants.php";
+require "includes/dbConnection.php";
+
+$conn = new dbConnection(DBTYPE,HOSTNAME,DBPORT,HOSTUSER,HOSTPASS,DBNAME);
+
+
 // $arr = ["black", "white", "green", "red"];
 
 // foreach($arr AS $color){
